@@ -1,0 +1,113 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('/img/fondo-marvel.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+main.index {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p.index {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 330px;
+    margin-right: 330px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 1.2em;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ffcc00;
+    /* Se utiliza text-shadow para crear ilusión de que el texto brilla. Ver documentacion de text-shadow */
+}
+
+
+/* Estilos de las otras paginas */
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .imagen img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container .detail {
+    text-align: left;
+    max-width: 600px;
+}
+
+.container .detail h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.container .detail p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.container .detail a button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.container .detail a button:hover {
+    background-color: #fff;
+}
